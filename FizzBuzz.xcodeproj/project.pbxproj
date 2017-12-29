@@ -88,6 +88,7 @@
 		B0990F231FF6E32A00D5FC43 = {
 			isa = PBXGroup;
 			children = (
+				B0990F6A1FF7073000D5FC43 /* README.md */,
 				B0990F2E1FF6E32A00D5FC43 /* FizzBuzz */,
 				B0990F431FF6E32B00D5FC43 /* FizzBuzzTests */,
 				B0990F5E1FF701EC00D5FC43 /* FizzBuzzUITests */,
@@ -118,7 +119,6 @@
 				B0990F4F1FF6E3BD00D5FC43 /* Brain.swift */,
 				B0990F511FF6EE4100D5FC43 /* FBType.swift */,
 				B0990F681FF7056900D5FC43 /* UIButtonExtension.swift */,
-				B0990F6A1FF7073000D5FC43 /* README.md */,
 			);
 			path = FizzBuzz;
 			sourceTree = "<group>";
