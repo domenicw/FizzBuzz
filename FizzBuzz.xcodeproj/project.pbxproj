@@ -57,6 +57,7 @@
 		B0990F5D1FF701EC00D5FC43 /* FizzBuzzUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FizzBuzzUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0990F611FF701EC00D5FC43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0990F681FF7056900D5FC43 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		B0990F6A1FF7073000D5FC43 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +118,7 @@
 				B0990F4F1FF6E3BD00D5FC43 /* Brain.swift */,
 				B0990F511FF6EE4100D5FC43 /* FBType.swift */,
 				B0990F681FF7056900D5FC43 /* UIButtonExtension.swift */,
+				B0990F6A1FF7073000D5FC43 /* README.md */,
 			);
 			path = FizzBuzz;
 			sourceTree = "<group>";
