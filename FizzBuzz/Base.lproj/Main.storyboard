@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,13 +14,90 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FizzBuzz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Vae-gx-xmo">
+                                <rect key="frame" x="94.5" y="240.5" width="186" height="186"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="wiA-Ai-QX5">
+                                        <rect key="frame" x="0.0" y="0.0" width="78" height="186"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYe-b2-VCW">
+                                                <rect key="frame" x="0.0" y="0.0" width="78" height="78"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="count"/>
+                                                <state key="normal" title="count"/>
+                                                <connections>
+                                                    <action selector="numberButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bPJ-h3-BD1"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ds8-PS-v1H">
+                                                <rect key="frame" x="0.0" y="108" width="78" height="78"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="buzz"/>
+                                                <state key="normal" title="buzz"/>
+                                                <connections>
+                                                    <action selector="buzzButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jCU-5x-s42"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="Ds8-PS-v1H" firstAttribute="height" secondItem="RYe-b2-VCW" secondAttribute="height" id="4RX-fA-GcL"/>
+                                            <constraint firstItem="Ds8-PS-v1H" firstAttribute="width" secondItem="RYe-b2-VCW" secondAttribute="width" id="YZI-9b-6Gf"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="AaT-rk-jKc">
+                                        <rect key="frame" x="108" y="0.0" width="78" height="186"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEP-nW-L5M">
+                                                <rect key="frame" x="0.0" y="0.0" width="78" height="78"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="fizz"/>
+                                                <state key="normal" title="fizz"/>
+                                                <connections>
+                                                    <action selector="fizzButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nre-Z5-bFS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daZ-k9-SzP">
+                                                <rect key="frame" x="0.0" y="108" width="78" height="78"/>
+                                                <accessibility key="accessibilityConfiguration" identifier="fizzBuzz"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" secondItem="daZ-k9-SzP" secondAttribute="height" multiplier="1:1" id="2Nr-KC-ODU"/>
+                                                </constraints>
+                                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                                <state key="normal" title="fizzbuzz"/>
+                                                <connections>
+                                                    <action selector="fizzBuuuButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VES-wi-lYr"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="zEP-nW-L5M" firstAttribute="height" secondItem="RYe-b2-VCW" secondAttribute="height" id="UNo-dS-4Se"/>
+                                    <constraint firstItem="daZ-k9-SzP" firstAttribute="width" secondItem="RYe-b2-VCW" secondAttribute="width" id="gBt-D6-xDA"/>
+                                    <constraint firstItem="zEP-nW-L5M" firstAttribute="width" secondItem="RYe-b2-VCW" secondAttribute="width" id="he1-NP-ebK"/>
+                                    <constraint firstItem="daZ-k9-SzP" firstAttribute="height" secondItem="RYe-b2-VCW" secondAttribute="height" id="onP-ve-KRA"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Vae-gx-xmo" secondAttribute="trailing" constant="10" id="TIr-6U-AqV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Vae-gx-xmo" secondAttribute="bottom" constant="10" id="ian-EU-IsN"/>
+                            <constraint firstItem="Vae-gx-xmo" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="n0k-nA-86w"/>
+                            <constraint firstItem="Vae-gx-xmo" firstAttribute="top" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="pGZ-d2-k2q"/>
+                            <constraint firstItem="Vae-gx-xmo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ram-Vv-FFn"/>
+                            <constraint firstItem="Vae-gx-xmo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vHy-fR-GdQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="buzzButton" destination="Ds8-PS-v1H" id="QSM-5G-Qzd"/>
+                        <outlet property="fizzButton" destination="zEP-nW-L5M" id="rFY-ex-eV4"/>
+                        <outlet property="fizzBuzzButton" destination="daZ-k9-SzP" id="fiI-HB-wDD"/>
+                        <outlet property="numberButton" destination="RYe-b2-VCW" id="9yZ-a8-f3L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
