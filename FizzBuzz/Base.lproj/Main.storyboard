@@ -92,16 +92,16 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HighScore" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C72-Pj-LYV">
-                                <rect key="frame" x="284.5" y="637" width="80.5" height="20.5"/>
+                                <rect key="frame" x="281" y="637" width="84" height="20.5"/>
                                 <accessibility key="accessibilityConfiguration" identifier="highScore"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJ5-3T-eD0">
-                                <rect key="frame" x="0.0" y="626" width="64" height="41"/>
+                                <rect key="frame" x="0.0" y="626" width="66" height="41"/>
                                 <accessibility key="accessibilityConfiguration" identifier="reset"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
                                 <state key="normal" title="Reset"/>
                                 <connections>
@@ -113,7 +113,6 @@
                         <constraints>
                             <constraint firstItem="MhH-rn-SZt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="2Lg-8l-wnE"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xJ5-3T-eD0" secondAttribute="bottom" id="81e-Ox-XHc"/>
-                            <constraint firstItem="C72-Pj-LYV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="9wJ-CC-Vt5"/>
                             <constraint firstItem="MhH-rn-SZt" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="DYF-lx-Yae"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="C72-Pj-LYV" secondAttribute="bottom" constant="10" id="PbT-rA-XEV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Vae-gx-xmo" secondAttribute="trailing" constant="10" id="TIr-6U-AqV"/>

@@ -22,6 +22,7 @@
 		B0990F561FF6F46200D5FC43 /* GameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0990F551FF6F46200D5FC43 /* GameTest.swift */; };
 		B0990F671FF701F300D5FC43 /* FizzBuzzUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0990F571FF6FD8B00D5FC43 /* FizzBuzzUITest.swift */; };
 		B0990F691FF7056900D5FC43 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0990F681FF7056900D5FC43 /* UIButtonExtension.swift */; };
+		B0F3B4921FF7F7F900AA0A9F /* fbScreenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F3B4911FF7F7F900AA0A9F /* fbScreenshot.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		B0990F611FF701EC00D5FC43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0990F681FF7056900D5FC43 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		B0990F6A1FF7073000D5FC43 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B0F3B4911FF7F7F900AA0A9F /* fbScreenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fbScreenshot.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				B0990F6A1FF7073000D5FC43 /* README.md */,
+				B0F3B4911FF7F7F900AA0A9F /* fbScreenshot.png */,
 				B0990F2E1FF6E32A00D5FC43 /* FizzBuzz */,
 				B0990F431FF6E32B00D5FC43 /* FizzBuzzTests */,
 				B0990F5E1FF701EC00D5FC43 /* FizzBuzzUITests */,
@@ -274,6 +277,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0F3B4921FF7F7F900AA0A9F /* fbScreenshot.png in Resources */,
 				B0990F3A1FF6E32B00D5FC43 /* LaunchScreen.storyboard in Resources */,
 				B0990F371FF6E32A00D5FC43 /* Assets.xcassets in Resources */,
 				B0990F351FF6E32A00D5FC43 /* Main.storyboard in Resources */,
