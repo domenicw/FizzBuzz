@@ -31,11 +31,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.updateScores()
-        self.setUpButtons()
+        self.setUpView()
     }
     
     // Set up for all the button when creating the view
-    func setUpButtons() {
+    func setUpView() {
         let buttons = [self.buzzButton, self.fizzButton, self.fizzBuzzButton, self.numberButton]
         for button in buttons {
             button?.setBlueBackground()
@@ -56,25 +56,27 @@ class ViewController: UIViewController {
     
     // Number Button action
     @IBAction func numberButtonTapped(_ sender: Any) {
-        let _ = self.game.play(with: .number)
-        self.updateScores()
+        self.play(with: .number)
     }
     
     // Fizz Button action
     @IBAction func fizzButtonTapped(_ sender: Any) {
-        let _ = self.game.play(with: .fizz)
-        self.updateScores()
+        self.play(with: .fizz)
     }
     
     // Buzz Button action
     @IBAction func buzzButtonTapped(_ sender: Any) {
-        let _ = self.game.play(with: .buzz)
-        self.updateScores()
+        self.play(with: .buzz)
     }
     
     // FizzBuzz Button action
     @IBAction func fizzBuzzButtonTapped(_ sender: Any) {
-        let _ = self.game.play(with: .fizzBuzz)
+        self.play(with: .fizzBuzz)
+    }
+    
+    // Play once with type and update score on view
+    func play(with type: FBType) {
+        let _ = self.game.play(with: type)
         self.updateScores()
     }
     
