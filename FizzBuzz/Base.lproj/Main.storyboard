@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -61,14 +60,14 @@
                                                     <action selector="fizzButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nre-Z5-bFS"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daZ-k9-SzP">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="clip" translatesAutoresizingMaskIntoConstraints="NO" id="daZ-k9-SzP">
                                                 <rect key="frame" x="0.0" y="102.5" width="72.5" height="72.5"/>
                                                 <accessibility key="accessibilityConfiguration" identifier="fizzBuzz"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="daZ-k9-SzP" secondAttribute="height" multiplier="1:1" id="2Nr-KC-ODU"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                                <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
                                                 <state key="normal" title="FizzBuzz"/>
                                                 <connections>
                                                     <action selector="fizzBuzzButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0sv-5I-R0I"/>
