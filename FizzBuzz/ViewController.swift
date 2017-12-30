@@ -16,6 +16,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    // UI variables
     @IBOutlet weak var numberButton: UIButton!
     @IBOutlet weak var fizzButton: UIButton!
     @IBOutlet weak var buzzButton: UIButton!
@@ -24,6 +25,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var highScoreLabel: UILabel!
     @IBOutlet weak var resetButton: UIButton!
     
+    // The game
     let game: Game = Game()
     
     override func viewDidLoad() {
@@ -32,6 +34,7 @@ class ViewController: UIViewController {
         self.setUpButtons()
     }
     
+    // Set up for all the button when creating the view
     func setUpButtons() {
         self.numberButton.setBlueBackground()
         self.fizzButton.setBlueBackground()
@@ -53,31 +56,37 @@ class ViewController: UIViewController {
         self.highScoreLabel.textColor = Theme.fBBlue
     }
     
+    // Reset Button action
     @IBAction func resetButtonTapped(_ sender: Any) {
         self.game.reset(with: true)
         self.updateScores()
     }
     
+    // Number Button action
     @IBAction func numberButtonTapped(_ sender: Any) {
         let _ = self.game.play(with: .number)
         self.updateScores()
     }
     
+    // Fizz Button action
     @IBAction func fizzButtonTapped(_ sender: Any) {
         let _ = self.game.play(with: .fizz)
         self.updateScores()
     }
     
+    // Buzz Button action
     @IBAction func buzzButtonTapped(_ sender: Any) {
         let _ = self.game.play(with: .buzz)
         self.updateScores()
     }
     
-    @IBAction func fizzBuuuButtonTapped(_ sender: Any) {
+    // FizzBuzz Button action
+    @IBAction func fizzBuzzButtonTapped(_ sender: Any) {
         let _ = self.game.play(with: .fizzBuzz)
         self.updateScores()
     }
     
+    // Update game scores
     func updateScores() {
         let count: String = String(self.game.count)
         self.fizzBuzzLabel.text = count

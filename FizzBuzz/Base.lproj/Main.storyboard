@@ -71,7 +71,7 @@
                                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                                 <state key="normal" title="FizzBuzz"/>
                                                 <connections>
-                                                    <action selector="fizzBuuuButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VES-wi-lYr"/>
+                                                    <action selector="fizzBuzzButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0sv-5I-R0I"/>
                                                 </connections>
                                             </button>
                                         </subviews>

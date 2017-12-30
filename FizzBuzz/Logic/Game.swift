@@ -22,8 +22,10 @@ class Game {
     // Current count (state of game)
     public private(set) var count: Int
     
+    // The brain
     private let brain: Brain
     
+    // The history
     public let history: History
     
     init() {
@@ -33,7 +35,7 @@ class Game {
     }
     
     // POST: returns bool indicating if type corresponds to current count
-    //       if false count is reset (to zero 0)
+    //       if false count is reset (to zero (0))
     public func play(with type: FBType) -> Bool {
         self.incrementCount()
         if brain.check(self.count) == type {
@@ -45,10 +47,12 @@ class Game {
         }
     }
     
+    // POST: Increments current count by one (1)
     private func incrementCount() {
         self.count += 1
     }
     
+    // POST: Resets current count to zero (0) and if history true, history will be reset as well to zero (0)
     public func reset(with history: Bool) {
         self.count = 0
         if history {

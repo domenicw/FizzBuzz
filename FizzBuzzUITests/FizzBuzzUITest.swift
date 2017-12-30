@@ -8,41 +8,48 @@
 
 import XCTest
 
+/*
+ *
+ * Tests the UI of the FizzBuzz Game
+ *
+ */
+
 class FizzBuzzUITest: XCTestCase {
     
     var app: XCUIApplication!
+    var number: XCUIElement!
+    var fizz: XCUIElement!
+    var buzz: XCUIElement!
+    var fizzbuzz: XCUIElement!
+    var score: XCUIElement!
+    var highScore: XCUIElement!
+    var reset: XCUIElement!
+    
     
     override func setUp() {
         super.setUp()
-        
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-        
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-        // UI tests must launch the application that they test. Doing this in setup will make sure it happens for each test method.
         self.app = XCUIApplication()
-        app.launch()
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
+        self.app.launch()
+        self.number = app.buttons["count"]
+        self.fizz = app.buttons["fizz"]
+        self.buzz = app.buttons["buzz"]
+        self.fizzbuzz = app.buttons["fizzBuzz"]
+        self.score = app.staticTexts["score"]
+        self.highScore = app.staticTexts["highScore"]
+        self.reset = app.buttons["reset"]
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
     
     func testNumber() {
-        let count = app.buttons["count"]
-        count.tap()
-        let score = app.staticTexts["score"].label
-        XCTAssertEqual(score, "1")
+        self.number.tap()
+        XCTAssertEqual(score.label, "1")
     }
     
     func tapToFourteen() {
-        let number = app.buttons["count"]
-        let fizz = app.buttons["fizz"]
-        let buzz = app.buttons["buzz"]
-        
         number.tap()
         number.tap()
         fizz.tap()
@@ -61,30 +68,21 @@ class FizzBuzzUITest: XCTestCase {
     
     func testFirstFizzBuzz() {
         self.tapToFourteen()
-        let fizzbuzz = app.buttons["fizzBuzz"]
         fizzbuzz.tap()
-        
-        let score = app.staticTexts["score"].label
-        XCTAssertEqual(score, "15")
+        XCTAssertEqual(score.label, "15")
     }
     
     func testHistory() {
         self.tapToFourteen()
-        app.buttons["count"].tap()
-        
-        let score = app.staticTexts["highScore"].label
-        XCTAssertEqual(score, "High Score: 14")
+        self.number.tap()
+        XCTAssertEqual(highScore.label, "High Score: 14")
     }
     
     func testReset() {
         self.tapToFourteen()
-        app.buttons["reset"].tap()
-        
-        let score = app.staticTexts["score"].label
-        let highScore = app.staticTexts["highScore"].label
-        
-        XCTAssertEqual(score, "0")
-        XCTAssertEqual(highScore, "High Score: 0")
+        self.reset.tap()
+        XCTAssertEqual(score.label, "0")
+        XCTAssertEqual(highScore.label, "High Score: 0")
     }
     
 }

@@ -36,6 +36,7 @@ class History {
         return false
     }
     
+    // POST: Resets current high score to zero (0)
     public func reset() {
         self.highScore = 0
     }
