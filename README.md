@@ -10,7 +10,7 @@ Inspiration is taken from [here](https://medium.com/@ynzc/getting-started-with-t
 
 The finished product is the game FizzBuzz. It is pretty simple. But the project really shows how you use TDD to develop a small app. The same principle is applied to bigger projects.
 
-![FizzBuzz the game](fbScreenshot)
+![FizzBuzz the game](fbScreenshot.png)
 
 ## Teach yourself
 
