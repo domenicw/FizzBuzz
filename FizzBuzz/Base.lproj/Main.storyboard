@@ -20,13 +20,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="Vae-gx-xmo">
-                                <rect key="frame" x="88" y="234" width="199" height="199"/>
+                                <rect key="frame" x="100" y="246" width="175" height="175"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="wiA-Ai-QX5">
-                                        <rect key="frame" x="0.0" y="0.0" width="84.5" height="199"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="175"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RYe-b2-VCW">
-                                                <rect key="frame" x="0.0" y="0.0" width="84.5" height="84.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
                                                 <accessibility key="accessibilityConfiguration" identifier="count"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <state key="normal" title="+1"/>
@@ -35,7 +35,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ds8-PS-v1H">
-                                                <rect key="frame" x="0.0" y="114.5" width="84.5" height="84.5"/>
+                                                <rect key="frame" x="0.0" y="102.5" width="72.5" height="72.5"/>
                                                 <accessibility key="accessibilityConfiguration" identifier="buzz"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <state key="normal" title="Buzz"/>
@@ -50,10 +50,10 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="AaT-rk-jKc">
-                                        <rect key="frame" x="114.5" y="0.0" width="84.5" height="199"/>
+                                        <rect key="frame" x="102.5" y="0.0" width="72.5" height="175"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zEP-nW-L5M">
-                                                <rect key="frame" x="0.0" y="0.0" width="84.5" height="84.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
                                                 <accessibility key="accessibilityConfiguration" identifier="fizz"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                 <state key="normal" title="Fizz"/>
@@ -62,13 +62,13 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daZ-k9-SzP">
-                                                <rect key="frame" x="0.0" y="114.5" width="84.5" height="84.5"/>
+                                                <rect key="frame" x="0.0" y="102.5" width="72.5" height="72.5"/>
                                                 <accessibility key="accessibilityConfiguration" identifier="fizzBuzz"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="daZ-k9-SzP" secondAttribute="height" multiplier="1:1" id="2Nr-KC-ODU"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
-                                                <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                                <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
                                                 <state key="normal" title="FizzBuzz"/>
                                                 <connections>
                                                     <action selector="fizzBuzzButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0sv-5I-R0I"/>
@@ -85,9 +85,9 @@
                                 </constraints>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MhH-rn-SZt">
-                                <rect key="frame" x="132" y="100" width="111" height="54"/>
+                                <rect key="frame" x="121" y="100" width="134.5" height="66"/>
                                 <accessibility key="accessibilityConfiguration" identifier="score"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="45"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="55"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>

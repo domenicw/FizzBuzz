@@ -36,22 +36,14 @@ class ViewController: UIViewController {
     
     // Set up for all the button when creating the view
     func setUpButtons() {
-        self.numberButton.setBlueBackground()
-        self.fizzButton.setBlueBackground()
-        self.buzzButton.setBlueBackground()
-        self.fizzBuzzButton.setBlueBackground()
+        let buttons = [self.buzzButton, self.fizzButton, self.fizzBuzzButton, self.numberButton]
+        for button in buttons {
+            button?.setBlueBackground()
+            button?.setWhiteTitle()
+            button?.makeCornerRadius()
+        }
+        
         self.resetButton.setTitleColor(Theme.fBBlue, for: .normal)
-        
-        self.numberButton.setWhiteTitle()
-        self.fizzButton.setWhiteTitle()
-        self.buzzButton.setWhiteTitle()
-        self.fizzBuzzButton.setWhiteTitle()
-        
-        self.numberButton.makeCornerRadius()
-        self.fizzButton.makeCornerRadius()
-        self.buzzButton.makeCornerRadius()
-        self.fizzBuzzButton.makeCornerRadius()
-        
         self.fizzBuzzLabel.textColor = Theme.fBBlue
         self.highScoreLabel.textColor = Theme.fBBlue
     }

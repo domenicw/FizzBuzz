@@ -16,7 +16,7 @@ import Foundation
 
 class History {
     
-    // current highScore
+    // Current highScore
     public private(set) var highScore: Int!
     
     init() {
