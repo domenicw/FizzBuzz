@@ -6,7 +6,7 @@ This project includes the app, as well as unit tests and UI tests.
 
 Inspiration is taken from [here](https://medium.com/@ynzc/getting-started-with-tdd-in-swift-2fab3e07204b) (TDD tutorial by Yvette).
 
-## Finished Product
+## Finished product
 
 The finished product is the game FizzBuzz. It is pretty simple. But the project really shows how to use TDD to develop a small app. The same principle is applied to bigger projects.
 
