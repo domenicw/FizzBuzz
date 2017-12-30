@@ -34,7 +34,7 @@ class FizzBuzzUITest: XCTestCase {
     func testNumber() {
         let count = app.buttons["count"]
         count.tap()
-        let score = count.label
+        let score = app.staticTexts["score"].label
         XCTAssertEqual(score, "1")
     }
     
@@ -64,8 +64,27 @@ class FizzBuzzUITest: XCTestCase {
         let fizzbuzz = app.buttons["fizzBuzz"]
         fizzbuzz.tap()
         
-        let score = app.buttons["count"].label
+        let score = app.staticTexts["score"].label
         XCTAssertEqual(score, "15")
+    }
+    
+    func testHistory() {
+        self.tapToFourteen()
+        app.buttons["count"].tap()
+        
+        let score = app.staticTexts["highScore"].label
+        XCTAssertEqual(score, "High Score: 14")
+    }
+    
+    func testReset() {
+        self.tapToFourteen()
+        app.buttons["reset"].tap()
+        
+        let score = app.staticTexts["score"].label
+        let highScore = app.staticTexts["highScore"].label
+        
+        XCTAssertEqual(score, "0")
+        XCTAssertEqual(highScore, "High Score: 0")
     }
     
 }

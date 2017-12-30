@@ -42,8 +42,17 @@ class GameTest: XCTestCase {
     func testResetCount() {
         let _ = game.play(with: FBType.number)
         XCTAssertEqual(game.count, 1)
-        game.resetCount()
+        game.reset(with: false)
         XCTAssertEqual(game.count, 0)
+    }
+    
+    func testHistory() {
+        let _ = game.play(with: FBType.number)
+        let _ = game.play(with: FBType.number)
+        let _ = game.play(with: FBType.number)
+        let _ = game.play(with: FBType.fizz)
+        let highScore = game.history.highScore
+        XCTAssertEqual(highScore, 2)
     }
     
 }

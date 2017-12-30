@@ -8,7 +8,12 @@
 
 import Foundation
 
-// Possible types for the game fizzBuzz
+/*
+ *
+ * Possible types for the game fizzBuzz
+ *
+ */
+
 enum FBType {
     case fizz
     case buzz

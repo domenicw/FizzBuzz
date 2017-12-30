@@ -9,17 +9,22 @@
 import Foundation
 import UIKit
 
+/*
+ *
+ * Extension for UIButton styling
+ *
+ */
+
 extension UIButton {
     func setWhiteTitle() {
         self.setTitleColor(.white, for: .normal)
     }
     
     func setBlueBackground() {
-        let blue = UIColor.init(red: 30/255, green: 144/255, blue: 1, alpha: 1)
-        self.layer.backgroundColor = blue.cgColor
+        self.layer.backgroundColor = Theme.fBBlue.cgColor
     }
     
     func makeCornerRadius() {
-        self.layer.cornerRadius = 5
+        self.layer.cornerRadius = 8
     }
 }

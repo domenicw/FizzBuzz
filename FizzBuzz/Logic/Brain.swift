@@ -8,6 +8,14 @@
 
 import Foundation
 
+/*
+ *
+ * Brain is the logic behind the fizzBuzz game.
+ *
+ * It checks if a number if fizz, buzz, fizzbuzz or nothing.
+ *
+ */
+
 class Brain {
 
     // POST: returns bool indicating if number is divisible by three

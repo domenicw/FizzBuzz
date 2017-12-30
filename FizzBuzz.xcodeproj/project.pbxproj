@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B08C09F61FF795FF000A305F /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C09F51FF795FF000A305F /* History.swift */; };
+		B08C09F81FF7964F000A305F /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C09F71FF7964F000A305F /* Theme.swift */; };
+		B08C09FA1FF79B70000A305F /* HistoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C09F91FF79B70000A305F /* HistoryTest.swift */; };
 		B0990F301FF6E32A00D5FC43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0990F2F1FF6E32A00D5FC43 /* AppDelegate.swift */; };
 		B0990F321FF6E32A00D5FC43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0990F311FF6E32A00D5FC43 /* ViewController.swift */; };
 		B0990F351FF6E32A00D5FC43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0990F331FF6E32A00D5FC43 /* Main.storyboard */; };
@@ -39,6 +42,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B08C09F51FF795FF000A305F /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
+		B08C09F71FF7964F000A305F /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		B08C09F91FF79B70000A305F /* HistoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTest.swift; sourceTree = "<group>"; };
 		B0990F2C1FF6E32A00D5FC43 /* FizzBuzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FizzBuzz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0990F2F1FF6E32A00D5FC43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0990F311FF6E32A00D5FC43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +91,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B08C09FB1FF7A9A3000A305F /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				B0990F531FF6F35600D5FC43 /* Game.swift */,
+				B0990F4F1FF6E3BD00D5FC43 /* Brain.swift */,
+				B08C09F51FF795FF000A305F /* History.swift */,
+				B0990F511FF6EE4100D5FC43 /* FBType.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		B08C09FC1FF7A9BD000A305F /* UI Helper */ = {
+			isa = PBXGroup;
+			children = (
+				B0990F681FF7056900D5FC43 /* UIButtonExtension.swift */,
+				B08C09F71FF7964F000A305F /* Theme.swift */,
+			);
+			path = "UI Helper";
+			sourceTree = "<group>";
+		};
 		B0990F231FF6E32A00D5FC43 = {
 			isa = PBXGroup;
 			children = (
@@ -115,10 +141,8 @@
 				B0990F361FF6E32A00D5FC43 /* Assets.xcassets */,
 				B0990F381FF6E32B00D5FC43 /* LaunchScreen.storyboard */,
 				B0990F3B1FF6E32B00D5FC43 /* Info.plist */,
-				B0990F531FF6F35600D5FC43 /* Game.swift */,
-				B0990F4F1FF6E3BD00D5FC43 /* Brain.swift */,
-				B0990F511FF6EE4100D5FC43 /* FBType.swift */,
-				B0990F681FF7056900D5FC43 /* UIButtonExtension.swift */,
+				B08C09FB1FF7A9A3000A305F /* Logic */,
+				B08C09FC1FF7A9BD000A305F /* UI Helper */,
 			);
 			path = FizzBuzz;
 			sourceTree = "<group>";
@@ -129,6 +153,7 @@
 				B0990F441FF6E32B00D5FC43 /* FizzBuzzTests.swift */,
 				B0990F461FF6E32B00D5FC43 /* Info.plist */,
 				B0990F551FF6F46200D5FC43 /* GameTest.swift */,
+				B08C09F91FF79B70000A305F /* HistoryTest.swift */,
 			);
 			path = FizzBuzzTests;
 			sourceTree = "<group>";
@@ -277,7 +302,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B0990F321FF6E32A00D5FC43 /* ViewController.swift in Sources */,
+				B08C09F81FF7964F000A305F /* Theme.swift in Sources */,
 				B0990F541FF6F35600D5FC43 /* Game.swift in Sources */,
+				B08C09F61FF795FF000A305F /* History.swift in Sources */,
 				B0990F521FF6EE4100D5FC43 /* FBType.swift in Sources */,
 				B0990F501FF6E3BD00D5FC43 /* Brain.swift in Sources */,
 				B0990F301FF6E32A00D5FC43 /* AppDelegate.swift in Sources */,
@@ -291,6 +318,7 @@
 			files = (
 				B0990F451FF6E32B00D5FC43 /* FizzBuzzTests.swift in Sources */,
 				B0990F561FF6F46200D5FC43 /* GameTest.swift in Sources */,
+				B08C09FA1FF79B70000A305F /* HistoryTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
