@@ -10,6 +10,22 @@
 		B08C09F61FF795FF000A305F /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C09F51FF795FF000A305F /* History.swift */; };
 		B08C09F81FF7964F000A305F /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C09F71FF7964F000A305F /* Theme.swift */; };
 		B08C09FA1FF79B70000A305F /* HistoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C09F91FF79B70000A305F /* HistoryTest.swift */; };
+		B0932FBB1FF8FD06004D483D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0932FB91FF8FD06004D483D /* Interface.storyboard */; };
+		B0932FBD1FF8FD06004D483D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0932FBC1FF8FD06004D483D /* Assets.xcassets */; };
+		B0932FC41FF8FD06004D483D /* FBWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B0932FC31FF8FD06004D483D /* FBWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B0932FC91FF8FD06004D483D /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0932FC81FF8FD06004D483D /* InterfaceController.swift */; };
+		B0932FCB1FF8FD06004D483D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0932FCA1FF8FD06004D483D /* ExtensionDelegate.swift */; };
+		B0932FCD1FF8FD06004D483D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0932FCC1FF8FD06004D483D /* NotificationController.swift */; };
+		B0932FCF1FF8FD06004D483D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B0932FCE1FF8FD06004D483D /* Assets.xcassets */; };
+		B0932FD41FF8FD06004D483D /* FBWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B0932FB71FF8FD06004D483D /* FBWatch.app */; };
+		B0932FDD1FF9035F004D483D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C09F71FF7964F000A305F /* Theme.swift */; };
+		B0932FDE1FF90362004D483D /* FBType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0990F511FF6EE4100D5FC43 /* FBType.swift */; };
+		B0932FDF1FF903D7004D483D /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0990F531FF6F35600D5FC43 /* Game.swift */; };
+		B0932FE01FF903DA004D483D /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0990F4F1FF6E3BD00D5FC43 /* Brain.swift */; };
+		B0932FE11FF903DD004D483D /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C09F51FF795FF000A305F /* History.swift */; };
+		B0932FE31FF90CA4004D483D /* HighScoreInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0932FE21FF90CA4004D483D /* HighScoreInterfaceController.swift */; };
+		B0932FE51FF91270004D483D /* GameDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0932FE41FF91270004D483D /* GameDelegate.swift */; };
+		B093FD491FF91F0100DA1E90 /* FB-Watch.png in Resources */ = {isa = PBXBuildFile; fileRef = B093FD481FF91F0100DA1E90 /* FB-Watch.png */; };
 		B0990F301FF6E32A00D5FC43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0990F2F1FF6E32A00D5FC43 /* AppDelegate.swift */; };
 		B0990F321FF6E32A00D5FC43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0990F311FF6E32A00D5FC43 /* ViewController.swift */; };
 		B0990F351FF6E32A00D5FC43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B0990F331FF6E32A00D5FC43 /* Main.storyboard */; };
@@ -22,10 +38,24 @@
 		B0990F561FF6F46200D5FC43 /* GameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0990F551FF6F46200D5FC43 /* GameTest.swift */; };
 		B0990F671FF701F300D5FC43 /* FizzBuzzUITest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0990F571FF6FD8B00D5FC43 /* FizzBuzzUITest.swift */; };
 		B0990F691FF7056900D5FC43 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0990F681FF7056900D5FC43 /* UIButtonExtension.swift */; };
-		B0F3B4921FF7F7F900AA0A9F /* fbScreenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F3B4911FF7F7F900AA0A9F /* fbScreenshot.png */; };
+		B0F3B4921FF7F7F900AA0A9F /* FB-Phone.png in Resources */ = {isa = PBXBuildFile; fileRef = B0F3B4911FF7F7F900AA0A9F /* FB-Phone.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B0932FC51FF8FD06004D483D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0990F241FF6E32A00D5FC43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0932FC21FF8FD06004D483D;
+			remoteInfo = "FBWatch Extension";
+		};
+		B0932FD21FF8FD06004D483D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B0990F241FF6E32A00D5FC43 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B0932FB61FF8FD06004D483D;
+			remoteInfo = FBWatch;
+		};
 		B0990F411FF6E32B00D5FC43 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = B0990F241FF6E32A00D5FC43 /* Project object */;
@@ -42,10 +72,49 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B0932FDA1FF8FD06004D483D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B0932FC41FF8FD06004D483D /* FBWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0932FDC1FF8FD06004D483D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B0932FD41FF8FD06004D483D /* FBWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		B08C09F51FF795FF000A305F /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 		B08C09F71FF7964F000A305F /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		B08C09F91FF79B70000A305F /* HistoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTest.swift; sourceTree = "<group>"; };
+		B0932FB71FF8FD06004D483D /* FBWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0932FBA1FF8FD06004D483D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		B0932FBC1FF8FD06004D483D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0932FBE1FF8FD06004D483D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0932FC31FF8FD06004D483D /* FBWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FBWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0932FC81FF8FD06004D483D /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		B0932FCA1FF8FD06004D483D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		B0932FCC1FF8FD06004D483D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		B0932FCE1FF8FD06004D483D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B0932FD01FF8FD06004D483D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B0932FD11FF8FD06004D483D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		B0932FE21FF90CA4004D483D /* HighScoreInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreInterfaceController.swift; sourceTree = "<group>"; };
+		B0932FE41FF91270004D483D /* GameDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDelegate.swift; sourceTree = "<group>"; };
+		B093FD481FF91F0100DA1E90 /* FB-Watch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FB-Watch.png"; sourceTree = "<group>"; };
 		B0990F2C1FF6E32A00D5FC43 /* FizzBuzz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FizzBuzz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0990F2F1FF6E32A00D5FC43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B0990F311FF6E32A00D5FC43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -65,10 +134,17 @@
 		B0990F611FF701EC00D5FC43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B0990F681FF7056900D5FC43 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		B0990F6A1FF7073000D5FC43 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		B0F3B4911FF7F7F900AA0A9F /* fbScreenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fbScreenshot.png; sourceTree = "<group>"; };
+		B0F3B4911FF7F7F900AA0A9F /* FB-Phone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FB-Phone.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		B0932FC01FF8FD06004D483D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B0990F291FF6E32A00D5FC43 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -113,14 +189,42 @@
 			path = "UI Helper";
 			sourceTree = "<group>";
 		};
+		B0932FB81FF8FD06004D483D /* FBWatch */ = {
+			isa = PBXGroup;
+			children = (
+				B0932FB91FF8FD06004D483D /* Interface.storyboard */,
+				B0932FBC1FF8FD06004D483D /* Assets.xcassets */,
+				B0932FBE1FF8FD06004D483D /* Info.plist */,
+			);
+			path = FBWatch;
+			sourceTree = "<group>";
+		};
+		B0932FC71FF8FD06004D483D /* FBWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B0932FC81FF8FD06004D483D /* InterfaceController.swift */,
+				B0932FE21FF90CA4004D483D /* HighScoreInterfaceController.swift */,
+				B0932FCA1FF8FD06004D483D /* ExtensionDelegate.swift */,
+				B0932FCC1FF8FD06004D483D /* NotificationController.swift */,
+				B0932FCE1FF8FD06004D483D /* Assets.xcassets */,
+				B0932FD01FF8FD06004D483D /* Info.plist */,
+				B0932FD11FF8FD06004D483D /* PushNotificationPayload.apns */,
+				B0932FE41FF91270004D483D /* GameDelegate.swift */,
+			);
+			path = "FBWatch Extension";
+			sourceTree = "<group>";
+		};
 		B0990F231FF6E32A00D5FC43 = {
 			isa = PBXGroup;
 			children = (
 				B0990F6A1FF7073000D5FC43 /* README.md */,
-				B0F3B4911FF7F7F900AA0A9F /* fbScreenshot.png */,
+				B0F3B4911FF7F7F900AA0A9F /* FB-Phone.png */,
+				B093FD481FF91F0100DA1E90 /* FB-Watch.png */,
 				B0990F2E1FF6E32A00D5FC43 /* FizzBuzz */,
 				B0990F431FF6E32B00D5FC43 /* FizzBuzzTests */,
 				B0990F5E1FF701EC00D5FC43 /* FizzBuzzUITests */,
+				B0932FB81FF8FD06004D483D /* FBWatch */,
+				B0932FC71FF8FD06004D483D /* FBWatch Extension */,
 				B0990F2D1FF6E32A00D5FC43 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -131,6 +235,8 @@
 				B0990F2C1FF6E32A00D5FC43 /* FizzBuzz.app */,
 				B0990F401FF6E32B00D5FC43 /* FizzBuzzTests.xctest */,
 				B0990F5D1FF701EC00D5FC43 /* FizzBuzzUITests.xctest */,
+				B0932FB71FF8FD06004D483D /* FBWatch.app */,
+				B0932FC31FF8FD06004D483D /* FBWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -173,6 +279,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		B0932FB61FF8FD06004D483D /* FBWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0932FDB1FF8FD06004D483D /* Build configuration list for PBXNativeTarget "FBWatch" */;
+			buildPhases = (
+				B0932FB51FF8FD06004D483D /* Resources */,
+				B0932FDA1FF8FD06004D483D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B0932FC61FF8FD06004D483D /* PBXTargetDependency */,
+			);
+			name = FBWatch;
+			productName = FBWatch;
+			productReference = B0932FB71FF8FD06004D483D /* FBWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		B0932FC21FF8FD06004D483D /* FBWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B0932FD91FF8FD06004D483D /* Build configuration list for PBXNativeTarget "FBWatch Extension" */;
+			buildPhases = (
+				B0932FBF1FF8FD06004D483D /* Sources */,
+				B0932FC01FF8FD06004D483D /* Frameworks */,
+				B0932FC11FF8FD06004D483D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FBWatch Extension";
+			productName = "FBWatch Extension";
+			productReference = B0932FC31FF8FD06004D483D /* FBWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		B0990F2B1FF6E32A00D5FC43 /* FizzBuzz */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B0990F491FF6E32B00D5FC43 /* Build configuration list for PBXNativeTarget "FizzBuzz" */;
@@ -180,10 +320,12 @@
 				B0990F281FF6E32A00D5FC43 /* Sources */,
 				B0990F291FF6E32A00D5FC43 /* Frameworks */,
 				B0990F2A1FF6E32A00D5FC43 /* Resources */,
+				B0932FDC1FF8FD06004D483D /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B0932FD31FF8FD06004D483D /* PBXTargetDependency */,
 			);
 			name = FizzBuzz;
 			productName = FizzBuzz;
@@ -236,6 +378,14 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Domenic Wüthrich";
 				TargetAttributes = {
+					B0932FB61FF8FD06004D483D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					B0932FC21FF8FD06004D483D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 					B0990F2B1FF6E32A00D5FC43 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -268,18 +418,38 @@
 				B0990F2B1FF6E32A00D5FC43 /* FizzBuzz */,
 				B0990F3F1FF6E32B00D5FC43 /* FizzBuzzTests */,
 				B0990F5C1FF701EC00D5FC43 /* FizzBuzzUITests */,
+				B0932FB61FF8FD06004D483D /* FBWatch */,
+				B0932FC21FF8FD06004D483D /* FBWatch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		B0932FB51FF8FD06004D483D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0932FBD1FF8FD06004D483D /* Assets.xcassets in Resources */,
+				B0932FBB1FF8FD06004D483D /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0932FC11FF8FD06004D483D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0932FCF1FF8FD06004D483D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B0990F2A1FF6E32A00D5FC43 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0F3B4921FF7F7F900AA0A9F /* fbScreenshot.png in Resources */,
+				B0F3B4921FF7F7F900AA0A9F /* FB-Phone.png in Resources */,
 				B0990F3A1FF6E32B00D5FC43 /* LaunchScreen.storyboard in Resources */,
 				B0990F371FF6E32A00D5FC43 /* Assets.xcassets in Resources */,
+				B093FD491FF91F0100DA1E90 /* FB-Watch.png in Resources */,
 				B0990F351FF6E32A00D5FC43 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +471,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		B0932FBF1FF8FD06004D483D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B0932FCD1FF8FD06004D483D /* NotificationController.swift in Sources */,
+				B0932FDF1FF903D7004D483D /* Game.swift in Sources */,
+				B0932FE51FF91270004D483D /* GameDelegate.swift in Sources */,
+				B0932FE11FF903DD004D483D /* History.swift in Sources */,
+				B0932FDD1FF9035F004D483D /* Theme.swift in Sources */,
+				B0932FDE1FF90362004D483D /* FBType.swift in Sources */,
+				B0932FE01FF903DA004D483D /* Brain.swift in Sources */,
+				B0932FCB1FF8FD06004D483D /* ExtensionDelegate.swift in Sources */,
+				B0932FC91FF8FD06004D483D /* InterfaceController.swift in Sources */,
+				B0932FE31FF90CA4004D483D /* HighScoreInterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		B0990F281FF6E32A00D5FC43 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -337,6 +524,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B0932FC61FF8FD06004D483D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0932FC21FF8FD06004D483D /* FBWatch Extension */;
+			targetProxy = B0932FC51FF8FD06004D483D /* PBXContainerItemProxy */;
+		};
+		B0932FD31FF8FD06004D483D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B0932FB61FF8FD06004D483D /* FBWatch */;
+			targetProxy = B0932FD21FF8FD06004D483D /* PBXContainerItemProxy */;
+		};
 		B0990F421FF6E32B00D5FC43 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = B0990F2B1FF6E32A00D5FC43 /* FizzBuzz */;
@@ -350,6 +547,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		B0932FB91FF8FD06004D483D /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B0932FBA1FF8FD06004D483D /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		B0990F331FF6E32A00D5FC43 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -369,6 +574,80 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B0932FD51FF8FD06004D483D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 28J3L9UEGT;
+				IBSC_MODULE = FBWatch_Extension;
+				INFOPLIST_FILE = FBWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.domenic.FizzBuzz.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		B0932FD61FF8FD06004D483D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 28J3L9UEGT;
+				IBSC_MODULE = FBWatch_Extension;
+				INFOPLIST_FILE = FBWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.domenic.FizzBuzz.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		B0932FD71FF8FD06004D483D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 28J3L9UEGT;
+				INFOPLIST_FILE = "FBWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.domenic.FizzBuzz.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		B0932FD81FF8FD06004D483D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 28J3L9UEGT;
+				INFOPLIST_FILE = "FBWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.domenic.FizzBuzz.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
 		B0990F471FF6E32B00D5FC43 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -575,6 +854,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B0932FD91FF8FD06004D483D /* Build configuration list for PBXNativeTarget "FBWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0932FD71FF8FD06004D483D /* Debug */,
+				B0932FD81FF8FD06004D483D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B0932FDB1FF8FD06004D483D /* Build configuration list for PBXNativeTarget "FBWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0932FD51FF8FD06004D483D /* Debug */,
+				B0932FD61FF8FD06004D483D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B0990F271FF6E32A00D5FC43 /* Build configuration list for PBXProject "FizzBuzz" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

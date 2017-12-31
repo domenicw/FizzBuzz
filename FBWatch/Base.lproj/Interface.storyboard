@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch42" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="FBWatch" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" id="hFP-te-b7g">
+                            <items>
+                                <label width="1" height="33" alignment="left" text="Score" textAlignment="center" id="pcG-kd-AkV">
+                                    <fontDescription key="font" type="system" weight="semibold" pointSize="25"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" layout="vertical" id="zUb-3U-uPB">
+                            <items>
+                                <group alignment="left" id="ltc-bY-4UU">
+                                    <items>
+                                        <button width="76" height="100" alignment="left" title="+1" id="hqT-Ev-kYt">
+                                            <fontDescription key="font" type="system" weight="medium" pointSize="15"/>
+                                            <variation key="device=watch38mm" height="50" width="66"/>
+                                            <variation key="device=watch42mm" height="60" width="76"/>
+                                            <connections>
+                                                <action selector="numberButtonTapped" destination="AgC-eL-Hgc" id="pFf-Ex-cFq"/>
+                                            </connections>
+                                        </button>
+                                        <button width="66" height="100" alignment="right" title="Fizz" id="gP8-Kz-ncq">
+                                            <fontDescription key="font" type="system" weight="medium" pointSize="15"/>
+                                            <variation key="device=watch38mm" height="50" width="66"/>
+                                            <variation key="device=watch42mm" height="60" width="76"/>
+                                            <connections>
+                                                <action selector="fizzButtonTapped" destination="AgC-eL-Hgc" id="wRs-HT-W0O"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                                <group alignment="left" id="sYa-EQ-a0t">
+                                    <items>
+                                        <button width="76" height="100" alignment="left" title="Buzz" id="2Nf-7p-gT2">
+                                            <fontDescription key="font" type="system" weight="medium" pointSize="15"/>
+                                            <variation key="device=watch38mm" height="50" width="66"/>
+                                            <variation key="device=watch42mm" height="60" width="76"/>
+                                            <connections>
+                                                <action selector="buzzButtonTapped" destination="AgC-eL-Hgc" id="gAB-LE-5iu"/>
+                                            </connections>
+                                        </button>
+                                        <button width="66" height="100" alignment="right" title="FizzBuzz" id="E9D-JB-7GH">
+                                            <fontDescription key="font" type="system" weight="medium" pointSize="15"/>
+                                            <variation key="device=watch38mm" height="50" title="FzBz" width="66"/>
+                                            <variation key="device=watch42mm" height="60" width="76"/>
+                                            <connections>
+                                                <action selector="fizzBuzzButtonTapped" destination="AgC-eL-Hgc" id="0F6-bi-wdm"/>
+                                            </connections>
+                                        </button>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                    </items>
+                    <menu key="menu" id="bLe-Pw-CuU">
+                        <items>
+                            <menuItem title="Reset Game" icon="repeat" id="Gfw-VL-86V">
+                                <connections>
+                                    <action selector="resetGameButtonTapped" destination="AgC-eL-Hgc" id="PZb-V2-Lkp"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="buzzButton" destination="2Nf-7p-gT2" id="KSb-aj-rsk"/>
+                        <outlet property="fizzButton" destination="gP8-Kz-ncq" id="sP1-52-atD"/>
+                        <outlet property="fizzBuzzButton" destination="E9D-JB-7GH" id="PLu-y4-S0U"/>
+                        <outlet property="numberButton" destination="hqT-Ev-kYt" id="fw6-Mm-tkv"/>
+                        <outlet property="scoreLabel" destination="pcG-kd-AkV" id="yQm-rP-bYl"/>
+                        <segue destination="adm-Uf-aPg" kind="relationship" relationship="nextPage" id="0t0-o7-FBV"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="219.69230769230771" y="352.64102564102569"/>
+        </scene>
+        <!--High Score Interface Controller-->
+        <scene sceneID="GTc-3Q-TBi">
+            <objects>
+                <controller id="adm-Uf-aPg" customClass="HighScoreInterfaceController" customModule="FBWatch_Extension">
+                    <items>
+                        <group width="1" height="131" alignment="left" id="mga-Nx-q8I">
+                            <items>
+                                <label width="1" height="1" alignment="left" text="High Score" textAlignment="center" numberOfLines="0" id="5Kg-ql-Suh"/>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Reset Game" id="Vcu-fO-qj5">
+                            <connections>
+                                <action selector="resetButtonTapped" destination="adm-Uf-aPg" id="lDE-p4-Qk3"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="highScoreLabel" destination="5Kg-ql-Suh" id="Jle-mn-aB4"/>
+                        <outlet property="resetButton" destination="Vcu-fO-qj5" id="LEc-Gk-OGl"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="466.41025641025647" y="352.64102564102569"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="FBWatch" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>
