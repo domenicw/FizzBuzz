@@ -9,12 +9,21 @@
 import WatchKit
 import Foundation
 
+/*
+ *
+ * High Score View
+ *
+ * You can also reset the game from here
+ *
+ */
 
 class HighScoreInterfaceController: WKInterfaceController {
 
+    // View variables
     @IBOutlet var highScoreLabel: WKInterfaceLabel!
     @IBOutlet var resetButton: WKInterfaceButton!
     
+    // Game singleton
     var delegate: GameDelegate!
     
     override func awake(withContext context: Any?) {
@@ -27,18 +36,15 @@ class HighScoreInterfaceController: WKInterfaceController {
         self.showHighScore()
         super.willActivate()
     }
-
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
-    }
     
+    // Shows high score on view
     func showHighScore() {
         let highScoreOpt = self.delegate.game.history.highScore
         guard let highScore = highScoreOpt else { return }
         self.highScoreLabel.setText("High Score: \(String(describing: highScore))")
     }
 
+    // Resets the game and updates high score on view
     @IBAction func resetButtonTapped() {
         self.delegate.game.reset(with: true)
         self.showHighScore()

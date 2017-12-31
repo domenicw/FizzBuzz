@@ -8,9 +8,20 @@
 
 import Foundation
 
+/*
+ *
+ * Game singleton for watch app
+ *
+ * (Needed because of page navigation)
+ *
+ */
+
 class GameDelegate {
+    
+    // Singleton instance
     static let shared = GameDelegate()
     
+    // Game instance
     let game: Game
     
     init() {
