@@ -8,15 +8,13 @@
 
 import Foundation
 
-/*
- *
- *  History keeps track of the current highScore
- *
+/**
+ History keeps track of the current highScore
+ 
  */
-
 class History {
     
-    // Current highScore
+    /// Current highScore
     public private(set) var highScore: Int!
     
     init() {
@@ -27,7 +25,7 @@ class History {
         self.highScore = highScore
     }
     
-    // POST: if score is new highScore, highScore is altered and true is returned
+    /// If score is new highScore, highScore is altered and true is returned
     public func new(_ score: Int) -> Bool {
         if score > self.highScore {
             self.highScore = score
@@ -36,7 +34,7 @@ class History {
         return false
     }
     
-    // POST: Resets current high score to zero (0)
+    /// Resets current high score to zero (0)
     public func reset() {
         self.highScore = 0
     }

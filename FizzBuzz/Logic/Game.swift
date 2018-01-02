@@ -8,24 +8,19 @@
 
 import Foundation
 
-
-/*
- *
- * Game class
- *
- * Game keeps track of the current count and
- *
+/**
+ Game class. Keeps track of the current game state.
+ 
  */
-
 class Game {
     
-    // Current count (state of game)
+    /// Current count (state of game)
     public private(set) var count: Int
     
-    // The brain
+    /// The brain
     private let brain: Brain
     
-    // The history
+    /// The game history
     public let history: History
     
     init() {
@@ -34,8 +29,16 @@ class Game {
         self.history = History()
     }
     
-    // POST: returns bool indicating if type corresponds to current count
-    //       if false count is reset (to zero (0))
+    /**
+     Plays once. Checks if parameter type is the correct FBType for current game state
+     
+     - Parameter type: FBType for current play
+     
+     - Returns: Bool indicating if parameter type is correct FBType for game state
+     
+     - Note: If parameter type is the wrong FBType for current game state, game will reset and game count will be zero (0) again.
+     
+     */
     public func play(with type: FBType) -> Bool {
         self.incrementCount()
         if brain.check(self.count) == type {
@@ -47,12 +50,17 @@ class Game {
         }
     }
     
-    // POST: Increments current count by one (1)
+    /// Increments current count by one (1)
     private func incrementCount() {
         self.count += 1
     }
     
-    // POST: Resets current count to zero (0) and if history true, history will be reset as well to zero (0)
+    /**
+     Resets current game count to zero (0)
+     
+     - Parameter history: Bool indicating if history should be reset too
+     
+     */
     public func reset(with history: Bool) {
         self.count = 0
         if history {

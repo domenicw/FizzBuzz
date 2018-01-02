@@ -8,15 +8,13 @@
 
 import UIKit
 
-/*
- *
- * Main View for the Game
- *
+/**
+ Main View for the Game
+ 
  */
-
 class ViewController: UIViewController {
 
-    // UI variables
+    /// UI variables
     @IBOutlet weak var numberButton: UIButton!
     @IBOutlet weak var fizzButton: UIButton!
     @IBOutlet weak var buzzButton: UIButton!
@@ -25,7 +23,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var highScoreLabel: UILabel!
     @IBOutlet weak var resetButton: UIButton!
     
-    // The game
+    /// The game
     let game: Game = Game()
     
     override func viewDidLoad() {
@@ -34,7 +32,7 @@ class ViewController: UIViewController {
         self.setUpView()
     }
     
-    // Set up for all the button when creating the view
+    /// Set up for all the button when creating the view
     func setUpView() {
         let buttons = [self.buzzButton, self.fizzButton, self.fizzBuzzButton, self.numberButton]
         for button in buttons {
@@ -48,39 +46,39 @@ class ViewController: UIViewController {
         self.highScoreLabel.textColor = Theme.fBBlue
     }
     
-    // Reset Button action
+    /// Reset Button action
     @IBAction func resetButtonTapped(_ sender: Any) {
         self.game.reset(with: true)
         self.updateScores()
     }
     
-    // Number Button action
+    /// Number Button action
     @IBAction func numberButtonTapped(_ sender: Any) {
         self.play(with: .number)
     }
     
-    // Fizz Button action
+    /// Fizz Button action
     @IBAction func fizzButtonTapped(_ sender: Any) {
         self.play(with: .fizz)
     }
     
-    // Buzz Button action
+    /// Buzz Button action
     @IBAction func buzzButtonTapped(_ sender: Any) {
         self.play(with: .buzz)
     }
     
-    // FizzBuzz Button action
+    /// FizzBuzz Button action
     @IBAction func fizzBuzzButtonTapped(_ sender: Any) {
         self.play(with: .fizzBuzz)
     }
     
-    // Play once with type and update score on view
+    /// Play once with type and update score on view
     func play(with type: FBType) {
         let _ = self.game.play(with: type)
         self.updateScores()
     }
     
-    // Update game scores
+    /// Update game scores
     func updateScores() {
         let count: String = String(self.game.count)
         self.fizzBuzzLabel.text = count

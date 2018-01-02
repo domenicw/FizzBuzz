@@ -8,12 +8,10 @@
 
 import XCTest
 
-/*
- *
- * Tests the UI of the FizzBuzz Game
- *
+/**
+ Test the UI of the FizzBuzz Game
+ 
  */
-
 class FizzBuzzUITest: XCTestCase {
     
     var app: XCUIApplication!

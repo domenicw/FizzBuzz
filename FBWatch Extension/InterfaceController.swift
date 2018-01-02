@@ -9,12 +9,10 @@
 import WatchKit
 import Foundation
 
-/*
- *
- * Main View for Game
- *
+/**
+ Main View of the Game
+ 
  */
-
 class InterfaceController: WKInterfaceController {
 
     // View variables
@@ -24,7 +22,7 @@ class InterfaceController: WKInterfaceController {
     @IBOutlet var buzzButton: WKInterfaceButton!
     @IBOutlet var fizzBuzzButton: WKInterfaceButton!
     
-    // Game singleton
+    /// Game singleton
     var delegate: GameDelegate!
     
     override func awake(withContext context: Any?) {
@@ -35,7 +33,7 @@ class InterfaceController: WKInterfaceController {
         self.updateScore()
     }
     
-    // Sets up all buttons
+    /// Sets up all buttons
     func setUpView() {
         let buttons = [numberButton, fizzButton, buzzButton, fizzBuzzButton]
         for button in buttons {
@@ -48,39 +46,39 @@ class InterfaceController: WKInterfaceController {
         super.willActivate()
     }
 
-    // Number button action
+    /// Number button action
     @IBAction func numberButtonTapped() {
         self.play(with: .number)
     }
     
-    // Fizz button action
+    /// Fizz button action
     @IBAction func fizzButtonTapped() {
         self.play(with: .fizz)
     }
     
-    // Buzz button action
+    /// Buzz button action
     @IBAction func buzzButtonTapped() {
         self.play(with: .buzz)
     }
     
-    // FizzBuzz button action
+    /// FizzBuzz button action
     @IBAction func fizzBuzzButtonTapped() {
         self.play(with: .fizzBuzz)
     }
     
-    // Play once with type and update score on view
+    /// Play once with type and update score on view
     func play(with type: FBType) {
         let _ = self.delegate.game.play(with: type)
         self.updateScore()
     }
     
-    // Updates score on view
+    /// Updates score on view
     func updateScore() {
         let score = self.delegate.game.count
         self.scoreLabel.setText(String(score))
     }
     
-    // Reset button action, resets game
+    /// Reset button action, resets game
     @IBAction func resetGameButtonTapped() {
         self.delegate.game.reset(with: true)
         self.updateScore()

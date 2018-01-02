@@ -10,12 +10,10 @@ import XCTest
 
 @testable import FizzBuzz
 
-/*
- *
- * Tests the Game Logic
- *
+/**
+ Tests the Game Logic.
+ 
  */
-
 class GameTest: XCTestCase {
     
     let game = Game()

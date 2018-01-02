@@ -9,12 +9,10 @@
 import XCTest
 @testable import FizzBuzz
 
-/*
- *
- * Tests the Brain of the Game
- *
+/**
+ Tests the Brain of the Game.
+ 
  */
-
 class FizzBuzzTests: XCTestCase {
     
     let brain = Brain()

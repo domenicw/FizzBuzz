@@ -10,12 +10,10 @@ import XCTest
 
 @testable import FizzBuzz
 
-/*
- *
- * Tests the History of the Game
- *
+/**
+ Tests the History of the Game
+ 
  */
-
 class HistoryTest: XCTestCase {
     
     override func setUp() {

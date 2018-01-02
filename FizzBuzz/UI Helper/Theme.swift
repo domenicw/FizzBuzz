@@ -9,15 +9,22 @@
 import Foundation
 import UIKit
 
-/*
- *
- * Theme Helper for the UI
- *
+/**
+ Theme Helper for the UI
+ 
  */
-
 struct Theme {
     
-    // Custom blue color
+    /**
+     Custom blue color
+     
+     - Red: 30/255
+     
+     - Green: 144/255
+     
+     - Blue: 1
+     
+     */
     public static let fBBlue: UIColor = UIColor(red: 30/255, green: 144/255, blue: 1, alpha: 1)
 
 }
