@@ -19,4 +19,4 @@ Have fun.
 
 ## Code documentation
 
-The whole project uses proper code documentation as Xcode likes it. Because of this style, you are able to see all the information you need with `Quick Help`. Just `option` click on a variable to see the informations about it.
+The whole project uses proper code documentation the way Xcode likes it. Because of this style, you are able to see all the information you need with `Quick Help`. Just `option` click on a variable to see the informations about it.
